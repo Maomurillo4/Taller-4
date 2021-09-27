@@ -1,0 +1,374 @@
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  /*background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;*/
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+  z-index: 50;
+}
+
+.img-logo {
+  height: 88px;
+  margin-left: 4%;
+  padding: 10px;
+}
+
+/*.menu {
+  width: auto;
+}*/
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
+.menu li a:hover {
+  color: #dac466;
+}
+
+main {
+  position: relative;
+  top: 80px;
+}
+
+
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* Unidad vh es una medida relativa */
+    height: 65vh;
+    box-shadow: 0px 0px 13px 3px #000000;
+}
+
+.gallery-container .gallery-item {
+    /* Es una abreviatura para el flex-grow, flex-shrink y flex-basis 
+    flex-grow:0; 
+    flex-shrink: 1;
+    flex-basis: auto; 
+    Hace que el elemento flexible sea flexible y estable la base flexible en cero */
+    
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex 0.3s ease-in-out;
+}
+
+.gallery-item span {
+  
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 10px;
+    background-color: rgb(70, 73, 88);
+    opacity: 0.8;
+    transition: opacity 0.8s ease;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.gallery-item:hover span {
+    opacity: 0;
+
+}
+
+.gallery-container .gallery-item:hover {
+  flex: 2 0 auto;
+}
+
+.gallery-container .gallery-item.g-item-1 {
+  background-image: url(imagenes/Future_Princess.jpg);
+}
+
+.gallery-container .gallery-item.g-item-2 {
+    background-image: url(imagenes/Demon_Queen_Lilith.jpg);
+}
+
+.gallery-container .gallery-item.g-item-3 {
+    background-image: url(imagenes/Legendary_Hero_Erina.jpg);
+}
+
+.gallery-container .gallery-item.g-item-4 {
+    background-image: url(imagenes/Santa_Little_Helper_Rue.jpg);
+}
+
+.gallery-container .gallery-item.g-item-5 {
+    background-image: url(imagenes/Executive_Red_Hood_Arabelle.png);
+}
+
+.knight {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.knight img {
+  width: 150px;
+}
+
+.back {
+  background-image: url(imagenes/background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 40px 40px;
+}
+
+.news-items {
+  padding: 30px;
+  background-image: url(imagenes/backgroundnews.png);
+  background-position: center;
+  border-radius: 5px;
+  margin: 40px 80px;
+  max-width: 400px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  box-shadow: 0px 0px 13px 1px #000000;
+
+}
+
+.news-items img {
+  display: flex;
+  justify-content: center;
+}
+
+.news-items img:hover {
+  
+  transition: transform 0.6s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.news-items p {
+  padding: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+.news-h2 {
+  
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.news-h2 p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lilita One', cursive;
+  padding: 10px;
+  color: #383535;
+  background-color: #e4ceca;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+
+.back-2 {
+  background-image: url(imagenes/background2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.trailer {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.trailer p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lilita One', cursive;
+  margin: 100px;
+  padding: 10px 20px;
+  color: #f6d8d2;
+  background-color: #383535;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+  z-index: 1;
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+
+.video {
+  margin: 100px;
+  border: 4px solid #ffabf4;
+  padding: 10px 10px 1px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 1px #000000;
+  z-index: 10;
+}
+
+.beth {
+  display: flex;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.back-3 {
+  background-image: url(imagenes/background3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app p{
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Lilita One', cursive;
+  padding: 10px;
+  color: #f6d8d2;
+  background-color: #3a3030;
+  border-radius: 15px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+
+.app-icon {
+  width: 300px;
+  margin: 40px 40px 5px;
+  border-radius: 15px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+
+
+.icons {
+  display: flex;
+}
+
+
+.icon-img {
+  box-shadow: 0px 0px 13px 1px #000000;
+  margin: 40px;
+  width: 300px;
+}
+
+.icon-img:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  top: 80px;
+  background-color: #000000;
+  color: #ebedee;
+}
+
+.knight-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.knight-2 img {
+  width: 150px;
+  margin: 20px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  width: 100px;
+  padding: 20px;
+}
+
+.social:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kakao {
+  height: 94px;
+  border-right: 2px solid white;
+}
+
+.foot-img {
+  padding: 10px 20px;
+}
+
+.foot p {
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+  width: 500px;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copy h2 {
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
